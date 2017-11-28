@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:jee="http://www.springframework.org/schema/jee"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+            http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee-2.0.xsd">
+    
+    
+  <!-- jms config failover:(tcp://192.168.1.230:61616,tcp://192.168.1.219:61616,tcp://remote:61616)?randomize=false&priorityBackup=true--> 
+    <!-- a pooling based JMS provider -->
+    <!-- 消息重新投递策略 6秒 12秒 24秒 48秒 96秒 3分钟 6分钟 12分钟 24分钟 48分钟 96分钟 180分钟 200分钟 200分钟...一直重试50次 -->
+  <bean id="jmsFactory" class="org.apache.activemq.pool.PooledConnectionFactory" destroy-method="stop">
+    <property name="connectionFactory">
+      <bean class="org.apache.activemq.ActiveMQConnectionFactory">
+        <property name="brokerURL">
+          <value>failover:(${message_broker_addr})?initialReconnectDelay=1000&amp;startupMaxReconnectAttempts=10&amp;timeout=2000</value>
+        </property>
+        <property name="sendTimeout" value="2000" />
+        <property name="alwaysSyncSend" value="true" />
+        <property name="redeliveryPolicy.useExponentialBackOff" value="true" />
+        <property name="redeliveryPolicy.backOffMultiplier" value="2" /><!-- 重试因子，重试规律为：6s 12s 24 48 96 3m 6m 12m 24m 48m 96m 3h 6h 12 1d 2d 4d  -->
+         <property name="redeliveryPolicy.redeliveryDelay" value="6000" /><!-- 6秒 -->
+         <property name="redeliveryPolicy.maximumRedeliveries" value="50" /><!-- 50次 -->
+           <property name="redeliveryPolicy.maximumRedeliveryDelay" value="12000000" /><!-- 最大200分钟间隔重试 -->
+      </bean>
+    </property>
+    <property name="expiryTimeout" value="10000" />
+  </bean>
+
+  <!-- Spring JMS Template -->
+  <bean id="jmsTemplate" class="org.springframework.jms.core.JmsTemplate">
+    <property name="connectionFactory">
+      <ref local="jmsFactory"/>
+    </property>
+  </bean>
+  
+  <!-- bean for send message -->
+   <bean id="messageSender" class="com.huifu.saturn.runtime.mq.sender.impl.MessageSenderImpl"> 
+    	<property name="jmsTemplate" ref="jmsTemplate"></property> 
+  	</bean>
+  	
+	<!-- and this is the message listener container -->
+	<bean id="saturnMessageListenerContainer" class="org.springframework.jms.listener.DefaultMessageListenerContainer" abstract="true">
+	    <property name="connectionFactory" ref="jmsFactory"/>
+	    <!--<property name="destination" ref="destination"/>
+	    <property name="messageListener" ref="messageListener" />
+	    <property name="pubSubDomain" value="true" />
+	    -->
+	    <property name="sessionTransacted" value="true" />
+		<property name="transactionManager" ref="jmsTransactionManager" />
+	</bean>
+	
+	<bean id="saturnPubSubMessageListenerContainer" class="org.springframework.jms.listener.DefaultMessageListenerContainer" abstract="true">
+	    <property name="connectionFactory" ref="jmsFactory"/>
+	     <property name="pubSubDomain" value="true" />
+	    <!--<property name="destination" ref="destination"/>
+	    <property name="messageListener" ref="messageListener" />
+	    <property name="pubSubDomain" value="true" />
+	   
+	    <property name="sessionTransacted" value="true" />
+		<property name="transactionManager" ref="jmsTransactionManager" /> -->
+	</bean>
+	
+    <bean id="jmsTransactionManager" class="org.springframework.jms.connection.JmsTransactionManager">
+        <property name="connectionFactory" ref="jmsFactory" />
+    </bean> 
+	
+</beans>

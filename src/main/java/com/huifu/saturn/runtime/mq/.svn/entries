@@ -1,0 +1,34 @@
+10
+
+dir
+5123
+http://192.168.0.74:5438/svn/trunk/saturn-archetype-project/saturn-jar/saturn-runtime/src/main/java/com/huifu/saturn/runtime/mq
+http://192.168.0.74:5438/svn/trunk
+
+
+
+2012-11-05T11:35:40.217794Z
+3935
+andy.zhang
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+4127ef1f-e837-45bc-900d-cfc7ef6dcf6c
+
+sender
+dir
+
+listener
+dir
+

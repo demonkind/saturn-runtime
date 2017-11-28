@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/trunk/!svn/ver/5103/saturn-archetype-project/saturn-jar/saturn-runtime/src/main/java/com/huifu/saturn/runtime/util
+END
+DataValidator.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/trunk/!svn/ver/3246/saturn-archetype-project/saturn-jar/saturn-runtime/src/main/java/com/huifu/saturn/runtime/util/DataValidator.java
+END
+GsendUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/trunk/!svn/ver/3858/saturn-archetype-project/saturn-jar/saturn-runtime/src/main/java/com/huifu/saturn/runtime/util/GsendUtils.java
+END
+RegexHelper.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/trunk/!svn/ver/3246/saturn-archetype-project/saturn-jar/saturn-runtime/src/main/java/com/huifu/saturn/runtime/util/RegexHelper.java
+END
+ServersUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/trunk/!svn/ver/3246/saturn-archetype-project/saturn-jar/saturn-runtime/src/main/java/com/huifu/saturn/runtime/util/ServersUtils.java
+END
+DateUtils.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/trunk/!svn/ver/3246/saturn-archetype-project/saturn-jar/saturn-runtime/src/main/java/com/huifu/saturn/runtime/util/DateUtils.java
+END

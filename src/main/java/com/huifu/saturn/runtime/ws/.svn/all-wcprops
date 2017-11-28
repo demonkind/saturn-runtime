@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/trunk/!svn/ver/3261/saturn-archetype-project/saturn-jar/saturn-runtime/src/main/java/com/huifu/saturn/runtime/ws
+END
+SaturnWebServiceClientFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/svn/trunk/!svn/ver/2268/saturn-archetype-project/saturn-jar/saturn-runtime/src/main/java/com/huifu/saturn/runtime/ws/SaturnWebServiceClientFactory.java
+END
+SaturnWebServiceException.java
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/svn/trunk/!svn/ver/863/saturn-archetype-project/saturn-jar/saturn-runtime/src/main/java/com/huifu/saturn/runtime/ws/SaturnWebServiceException.java
+END
+SaturnWebServiceProxyInterceptor.java
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/svn/trunk/!svn/ver/3261/saturn-archetype-project/saturn-jar/saturn-runtime/src/main/java/com/huifu/saturn/runtime/ws/SaturnWebServiceProxyInterceptor.java
+END
+SaturnWebServiceClientStatus.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/svn/trunk/!svn/ver/863/saturn-archetype-project/saturn-jar/saturn-runtime/src/main/java/com/huifu/saturn/runtime/ws/SaturnWebServiceClientStatus.java
+END

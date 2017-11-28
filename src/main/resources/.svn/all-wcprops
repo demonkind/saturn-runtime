@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/trunk/!svn/ver/3246/saturn-archetype-project/saturn-jar/saturn-runtime/src/main/resources
+END
+applicationContext-runtime-heartBeat.xml
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/trunk/!svn/ver/1542/saturn-archetype-project/saturn-jar/saturn-runtime/src/main/resources/applicationContext-runtime-heartBeat.xml
+END
+applicationContext-threadPool.xml
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/trunk/!svn/ver/1048/saturn-archetype-project/saturn-jar/saturn-runtime/src/main/resources/applicationContext-threadPool.xml
+END
+applicationContext-runtime-config.xml
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/trunk/!svn/ver/2309/saturn-archetype-project/saturn-jar/saturn-runtime/src/main/resources/applicationContext-runtime-config.xml
+END
+applicationContext-resource-runtime.xml
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/trunk/!svn/ver/3246/saturn-archetype-project/saturn-jar/saturn-runtime/src/main/resources/applicationContext-resource-runtime.xml
+END

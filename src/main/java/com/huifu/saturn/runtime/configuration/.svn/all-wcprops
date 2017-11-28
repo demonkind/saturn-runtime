@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/trunk/!svn/ver/2320/saturn-archetype-project/saturn-jar/saturn-runtime/src/main/java/com/huifu/saturn/runtime/configuration
+END
+ConfigCenterIpService.java
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/svn/trunk/!svn/ver/1704/saturn-archetype-project/saturn-jar/saturn-runtime/src/main/java/com/huifu/saturn/runtime/configuration/ConfigCenterIpService.java
+END
+IpConfigServiceListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/svn/trunk/!svn/ver/1751/saturn-archetype-project/saturn-jar/saturn-runtime/src/main/java/com/huifu/saturn/runtime/configuration/IpConfigServiceListener.java
+END
+GlobalConfigService.java
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/svn/trunk/!svn/ver/2022/saturn-archetype-project/saturn-jar/saturn-runtime/src/main/java/com/huifu/saturn/runtime/configuration/GlobalConfigService.java
+END
+ConfigInfoServiceListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/svn/trunk/!svn/ver/2320/saturn-archetype-project/saturn-jar/saturn-runtime/src/main/java/com/huifu/saturn/runtime/configuration/ConfigInfoServiceListener.java
+END

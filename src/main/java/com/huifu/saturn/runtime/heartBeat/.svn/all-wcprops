@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/trunk/!svn/ver/4811/saturn-archetype-project/saturn-jar/saturn-runtime/src/main/java/com/huifu/saturn/runtime/heartBeat
+END
+SaturnHeartBeatTask.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/trunk/!svn/ver/4811/saturn-archetype-project/saturn-jar/saturn-runtime/src/main/java/com/huifu/saturn/runtime/heartBeat/SaturnHeartBeatTask.java
+END
+SaturnHeartBeatFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/svn/trunk/!svn/ver/1542/saturn-archetype-project/saturn-jar/saturn-runtime/src/main/java/com/huifu/saturn/runtime/heartBeat/SaturnHeartBeatFactory.java
+END
+SaturnHeartBeatExecutor.java
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/svn/trunk/!svn/ver/863/saturn-archetype-project/saturn-jar/saturn-runtime/src/main/java/com/huifu/saturn/runtime/heartBeat/SaturnHeartBeatExecutor.java
+END

@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/trunk/!svn/ver/3856/saturn-archetype-project/saturn-jar/saturn-runtime/src/main/java/com/huifu/saturn/runtime/context
+END
+SaturnApplicationContext.java
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/svn/trunk/!svn/ver/1720/saturn-archetype-project/saturn-jar/saturn-runtime/src/main/java/com/huifu/saturn/runtime/context/SaturnApplicationContext.java
+END
+SaturnContextLoaderListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/svn/trunk/!svn/ver/3856/saturn-archetype-project/saturn-jar/saturn-runtime/src/main/java/com/huifu/saturn/runtime/context/SaturnContextLoaderListener.java
+END
